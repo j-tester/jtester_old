@@ -1,0 +1,28 @@
+{
+  "name": "jtester",
+  "version": "0.0.0",
+  "description": "a project built with konstructor",
+  "main": "index.js",
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "koa": "^2.2.0",
+    "konstructor": "^0.1.0",
+    "pg": "^6.1.5",
+    "sequelize": "^3.30.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "laravel-mix": "^0.11.3",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.4.1"
+  },
+  "scripts": {
+    "start": "konstructor start",
+    "dev": "konstructor dev",
+    "build": "konstructor build",
+    "digest": "konstructor digest"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true
+}
