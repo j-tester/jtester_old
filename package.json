@@ -12,6 +12,9 @@
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
     "laravel-mix": "^0.11.3",
     "nodemon": "^1.11.0",
     "webpack": "^2.4.1"
@@ -20,7 +23,9 @@
     "start": "konstructor start",
     "dev": "konstructor dev",
     "build": "konstructor build",
-    "digest": "konstructor digest"
+    "digest": "konstructor digest",
+    "test": "yarn lint",
+    "lint": "eslint *.js app/. config/. db/."
   },
   "author": "",
   "license": "UNLICENSED",

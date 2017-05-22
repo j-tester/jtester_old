@@ -1,3 +1,4 @@
+/* eslint-disable */
 const mix = require('laravel-mix');
 
 /*

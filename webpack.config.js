@@ -1,3 +1,4 @@
+/* eslint-disable */
 let path = require('path');
 let glob = require('glob');
 let webpack = require('webpack');
