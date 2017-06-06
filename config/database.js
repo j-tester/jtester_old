@@ -1,5 +1,3 @@
-const databaseConfig = {};
-
 const development = {
   username: 'root',
   password: null,
@@ -24,10 +22,6 @@ const test = {
 
 const production = (process.env.DATABASE_URL) ? {
   url: process.env.DATABASE_URL,
-  dialect: 'postgres',
-  define: {
-    underscored: true,
-  },
 } : {
   username: 'root',
   password: null,
@@ -39,8 +33,8 @@ const production = (process.env.DATABASE_URL) ? {
   },
 };
 
-databaseConfig.development = development;
-databaseConfig.test = test;
-databaseConfig.production = production;
-
-module.exports = databaseConfig;
+module.exports = {
+  development,
+  test,
+  production,
+};

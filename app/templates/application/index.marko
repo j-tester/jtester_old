@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>asdf</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <import-css-assets assets=input.data.assets />
+  </head>
+
+  <body>
+    <main role="main" id="app">
+      <if(input.data.flash)>
+        <for(error in input.data.flash)>
+          <div class={
+            flash: true,
+            'white-text': true,
+            'flow-text': true,
+            center: true,
+            indigo: true,
+            red: (error.type === 'error'),
+            green: (error.type === 'success'),
+            orange: (error.type === 'warning')
+          }>
+            <div class="container">
+              ${error.message}
+            </div>
+          </div>
+        </for>
+      </if>
+
+      <include(input.main)/>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <import-js-assets assets=input.data.assets liveReload=input.data.liveReload />
+  </body>
+</html>

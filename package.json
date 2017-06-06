@@ -1,33 +1,30 @@
 {
   "name": "jtester",
   "version": "0.0.0",
-  "description": "a project built with konstructor",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "babel-register": "^6.24.1",
-    "koa": "^2.2.0",
-    "konstructor": "^0.1.0",
-    "pg": "^6.1.5",
-    "sequelize": "^3.30.4"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.2.0",
-    "laravel-mix": "^0.11.3",
-    "nodemon": "^1.11.0",
-    "webpack": "^2.4.1"
-  },
   "scripts": {
     "start": "konstructor start",
     "dev": "konstructor dev",
-    "build": "konstructor build",
-    "digest": "konstructor digest",
-    "test": "yarn lint",
+    "test": "npm run lint",
     "lint": "eslint *.js app/. config/. db/."
   },
+  "keywords": [],
   "author": "",
-  "license": "UNLICENSED",
-  "private": true
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "browser-refresh": "^1.7.1",
+    "koa": "^2.2.0",
+    "konstructor": "^0.3.0",
+    "marko": "^4.4.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "laravel-mix": "^0.12.1",
+    "webpack": "^2.6.1"
+  }
 }

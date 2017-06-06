@@ -1,3 +1,3 @@
 module.exports = {
-  keys: [process.env.APP_KEY],
+  keys: [process.env.SECRET_KEY_BASE],
 };
