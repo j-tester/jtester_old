@@ -1,22 +1,32 @@
 <include('../application/index.marko') data=input>
   <@main>
     <div class="container section">
-      <div class="row center no-pad-bottom">
-        <div class="col s12">
-          <h4 class="no-pad-bottom">welcome to konstructor!</h4>
-          <p class="flow-text no-pad-top no-pad-bottom">more than a boilerplate, less than a framework.</p>
+      <div class="row">
+        <h3 class="no-pad-top no-pad-bottom bold lowercase title center"><a href="/" class="black-text">a testing framework for your json apis</a></h3>
+        <div class="col s12 m8 offset-m2">
+          <p class="no-pad-top no-pad-bottom center flow-text">
+            under active development.
+          </p>
+          <p class="no-pad-top no-pad-bottom">
+<pre>
+<code class="json">// ~/tests/v1-api-test.json
+${JSON.stringify(input.sampleJSON, null, 2)}
+</code>
+</pre>
+            <p class="center no-pad-top">The framwork will allow you to easily set up diff tests for your apis through JSON files.</p>
+          </p>
         </div>
       </div>
 
-      <div class="row center no-pad-bottom">
-        <div class="col s8 offset-s2">
-          <h1>${input.hello} ${input.app}</h1>
-        </div>
-      </div>
-
-      <div class="row center no-pad-bottom">
-        <div class="col s8 offset-s2">
-          <p>The framework comes with Materialize, and jQuery pre-installed via script tags. You can remove them from <code>app/templates/application/index.marko</code> if you don't need them or if you are looking for a more permanent solution, install them with <code>npm</code>.</p>
+      <div class="row">
+        <h3 class="no-pad-top no-pad-bottom bold lowercase title center"><a href="/diff" class="black-text">json-diff (cli, web)</a></h3>
+        <div class="col s12 m8 offset-m2">
+          <p class="no-pad-top no-pad-bottom center flow-text">
+            a cli and website to help you diff the json in your apis.
+          </p>
+          <p class="no-pad-top no-pad-bottom center">
+            <a href="/diff/download" class="waves-effect waves-light btn-flat btn-large lowercase">cli</a> <a href="/diff" class="waves-effect waves-light btn-large lowercase">website</a>
+          </p>
         </div>
       </div>
     </div>

@@ -16,6 +16,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-register": "^6.24.1",
     "browser-refresh": "^1.7.1",
+    "highlight.js": "^9.12.0",
     "koa": "^2.2.0",
     "konstructor": "^0.3.0",
     "marko": "^4.4.7"
@@ -24,7 +25,9 @@
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
+    "jquery": "^2.1.4",
     "laravel-mix": "^0.12.1",
+    "materialize-css": "^0.98.2",
     "webpack": "^2.6.1"
   }
 }

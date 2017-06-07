@@ -16,6 +16,11 @@ mix.js('app/assets/js/app.js', 'js/app.js');
 mix.sass('app/assets/css/app.scss', 'css/app.css');
 mix.copyDirectory('app/assets/static/', 'public/assets');
 
+mix.copyDirectory('node_modules/materialize-css/dist/fonts', 'public/assets/fonts');
+mix.autoload({
+  jquery: ['$', 'window.jQuery', 'jQuery']
+});
+
 mix.disableNotifications();
 mix.setPublicPath('public/assets');
 mix.options({

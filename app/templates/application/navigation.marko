@@ -1,0 +1,12 @@
+<nav>
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">jtester</a>
+    <a href="" data-activates="sidenav" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <include('./_menu.marko') route=input.route />
+    </ul>
+    <ul class="side-nav" id="sidenav">
+      <include('./_menu.marko') route=input.route />
+    </ul>
+  </div>
+</nav>
