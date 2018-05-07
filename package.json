@@ -1,33 +1,35 @@
 {
   "name": "jtester",
-  "version": "0.0.0",
   "description": "",
+  "version": "0.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "konstructor start",
-    "dev": "konstructor dev",
-    "test": "npm run lint",
-    "lint": "eslint *.js app/. config/. db/."
+    "start": "konstructor-scripts start",
+    "dev": "konstructor-scripts dev",
+    "watch": "konstructor-scripts watch",
+    "build": "konstructor-scripts build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
-    "babel-register": "^6.24.1",
-    "browser-refresh": "^1.7.1",
-    "highlight.js": "^9.12.0",
-    "koa": "^2.2.0",
-    "konstructor": "^0.3.0",
-    "marko": "^4.4.7"
-  },
+  "keywords": [
+    "konstructor"
+  ],
+  "private": true,
   "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0",
-    "jquery": "^2.1.4",
-    "laravel-mix": "^0.12.1",
-    "materialize-css": "^0.98.2",
-    "webpack": "^2.6.1"
+    "bulma": "^0.7.1",
+    "laravel-mix": "^2.1.11",
+    "nodemon": "^1.17.3",
+    "vue": "^2.5.16"
+  },
+  "peerDependencies": {
+    "marko": "^4.8.0"
+  },
+  "dependencies": {
+    "@konstructor/assets": "^1.0.0",
+    "@konstructor/error": "^1.0.0",
+    "@konstructor/koa": "^1.0.0",
+    "@konstructor/konstructor": "^2.0.0",
+    "@konstructor/logger": "^1.0.0",
+    "@konstructor/marko": "^1.0.0",
+    "@konstructor/router": "^1.0.0",
+    "@konstructor/static": "^1.0.0"
   }
 }
