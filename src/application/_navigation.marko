@@ -1,0 +1,21 @@
+<nav class="navbar is-white is-fixed-top has-shadow" id="main-navbar">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item bold" href="/">
+        <span class="is-size-5">JTester</span>
+      </a>
+
+      <div class="navbar-burger burger" v-bind:class="{ 'is-active': active }" v-on:click="toggleActive">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class="navbar-menu" v-bind:class="{ 'is-active': active }">
+      <div class="navbar-end">
+        <include('./_menu.marko', input) />
+      </div>
+    </div>
+  </div>
+</nav>

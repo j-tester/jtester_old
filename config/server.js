@@ -2,19 +2,22 @@ const path = require('path');
 
 module.exports = {
   development: {
-    command: path.join(__dirname, '../node_modules/.bin/browser-refresh'),
+    command: path.join(__dirname, '../node_modules/nodemon/bin/nodemon.js'),
     options: [
-      require.resolve('konstructor/app'),
+      'index.js',
+      // '--ignore', '*.marko.js', // uncomment if you want live-reload
+      '--watch', 'src',
+      '--ext', 'js,marko',
     ],
     environment: {
-      BROWSER_REFRESH_SILENT: true,
     },
   },
-
   production: {
     command: 'node',
     options: [
-      require.resolve('konstructor/app'),
+      'index.js',
     ],
+    environment: {
+    },
   },
 };
